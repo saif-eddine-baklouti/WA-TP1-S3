@@ -1,12 +1,7 @@
 <?php
 require_once('classes/CRUD.php');
 $crud = new CRUD;
-$client = $crud->select('etudiant');
-
-// echo "<pre>";
-// var_dump($client);
-// // print_r($client);
-// echo "<pre>";
+$formation = $crud->select('programme');
 
 ?>
 
@@ -23,29 +18,29 @@ $client = $crud->select('etudiant');
         </header>
         
         <main>
-            <h2>Liste principale d'etudiants</h2>
-        <a href="">Ajoute Etudiant</a>
-        <table>
+            <h2>Cours en ligne</h2>
+            <h3> Formation disponible</h3>
+        <a href="condidatForm.php">Poser votre candidature</a>
+        <a href="condidatsListe.php">Liste candidatures</a>
+        <table >
         <tr>
-            <th>Numero Etudiant</th>
-            <th>Nom & Prenom</th>
-            <th>Email</th>
-            <th>Ville</th>
+            <th>Nom de programme</th>
+            <th>Description</th>
             
         </tr>
         <?php
-        foreach($client as $row){
+        foreach($formation as $row){
         ?>
             <tr>
-                <td><a href="client-show.php?id=<?= $row['id']?>"><?= $row['id']?></a></td>
-                <td><a href="client-show.php?id=<?= $row['id']?>"><?= $row['nom']?> <?= $row['prenom']?> </a></td>
-                <td><?= $row['email']?></td>
-                <td><?= $row['ville']?></td>
+
+                <td><a href="client-show.php?id=<?= $row['id']?>"><?= $row['nom_programme']?></a></td>
+                <td><?= $row['description']?></td>
+
             </tr>
-        </table>
-        <?php 
+            <?php 
         } 
         ?>
+        </table>
         </main>
 </body>
 </html>
