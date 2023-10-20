@@ -1,0 +1,73 @@
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+  }
+  
+  /* Style pour la section principale (le formulaire) */
+  main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Style pour les libellés des champs de formulaire */
+  label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+/* Style pour les champs de texte */
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  background-color: #f7f7f7; /* Couleur de fond */
+  color: #333; /* Couleur du texte */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); /* Légère ombre */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Style lorsque le champ de texte est en surbrillance */
+input[type="text"]:focus {
+  border-color: #007bff; /* Couleur de la bordure en surbrillance */
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2); /* Ombre plus prononcée en surbrillance */
+}
+
+/* Style pour le bouton d'inscription */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+  
+  /* Style pour le lien "Accueil" */
+  a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

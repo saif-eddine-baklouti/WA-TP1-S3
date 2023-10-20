@@ -1,0 +1,81 @@
+/* Réinitialisation des marges et des rembourrages pour une apparence cohérente */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style de base pour le corps de la page */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+  }
+  
+  /* Style de l'en-tête */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style pour les titres */
+  h2 {
+    color: #333;
+  }
+  
+  h3 {
+    color: #777;
+  }
+  
+  /* Style pour les liens */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style pour les tables */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Style pour la liste des candidats */
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Style pour les options des candidats */
+  td a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  td a:hover {
+    text-decoration: underline;
+  }
+  
+  h4 {
+    color: red;
+  }
